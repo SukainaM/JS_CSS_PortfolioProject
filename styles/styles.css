@@ -407,22 +407,58 @@ section {
   text-align: center;
 }
 
+/* ports-img */
+
 .portfolios {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 2rem;
+  grid-gap: 3rem;
   margin-top: 3rem;
 }
 .portfolios .portfolio-item {
+  width: 120%;
   position: relative;
   border-radius: 15px;
 }
-.portfolios .portfolio-item img {
-  width: 100%;
-  height: 300px;
+.portfolios .portfolio-item .ports-img {
+  width: 100% ;
+  height: 280px;
   object-fit: cover;
   border-radius: 15px;
 }
+
+
+.modal{
+
+  height:100%;
+  /* position: fixed; */
+  max-height: 600px;
+  /* max-height:500px;  */
+    overflow-y:auto;
+
+
+}
+
+.modal-content{
+  /* position: relative; */
+  padding: 10px;
+  height: 100%;
+  overflow-y: scroll;
+}
+
+
+.modal-header{
+  color:#000
+}
+.portfolio-text{
+  color:#000;
+}
+
+
+/* USELSS AFTER THIS */
+
+
+
 .portfolios .portfolio-item .hover-items {
   width: 100%;
   height: 100%;
